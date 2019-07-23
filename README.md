@@ -9,7 +9,7 @@ Features
 
 Installation
 
-Add this item to the workshop collection that your server is linked to and restart your server (resource.AddWorkshop is not required) if not (lien github) download the addon put it in your addon folder of your server and put the content in your workshop collection .
+Add this item to the workshop collection that your server is linked to and restart your server (resource.AddWorkshop is not required) if not https://github.com/goldensdevs/Golden-HUD-V1 download the addon put it in your addon folder of your server and put the content in your workshop collection .
 
 content :
 
