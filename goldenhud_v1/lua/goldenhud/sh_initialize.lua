@@ -9,19 +9,21 @@ resource.AddFile("materials/golden_hud/health.png")
 resource.AddFile("materials/golden_hud/armor.png")
 resource.AddFile("materials/golden_hud/hunger.png")
 
+AddCSLuaFile( "sh_config.lua" )
+AddCSLuaFile( "cl/cl_init.lua" )
+
+
 if SERVER then
 	resource.AddWorkshop("1810284433")
-end
 
-if SERVER then
-
-	AddCSLuaFile( "sh_config.lua" )
-
-	AddCSLuaFile( "cl/cl_init.lua" )
-
-	
+	Msg( "///////////////////////////////\n" )
+	Msg( "//   Golden Hud V1 Library   //\n" )
+	Msg( "///////////////////////////////\n" )
+	Msg( "// Loading...                //\n" )
+	Msg( "//  goldenhud/sh_config.lua  //\n" )
 	include( "sh_config.lua" )
-
+	Msg( "// Load Complete!            //\n" )
+	Msg( "///////////////////////////////\n" )
 
 else
 
