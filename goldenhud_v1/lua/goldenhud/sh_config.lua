@@ -1,7 +1,7 @@
 /*#################################################
-
+###												###
 ###          GoldenHUDV1 config file            ###
-                   By Chredeur
+###				    By chredeur					###
 #################################################*/
 GoldenHUDV1 = {}
 
@@ -27,6 +27,7 @@ GoldenHUDV1.FoodNumberColor = Color(255, 255, 255, 150) -- Change the color of t
 GoldenHUDV1.FoodPicture = true -- Enable disable image
 
 -- Ammo Bar 
+GoldenHUDV1.EnableAmmoBar = true -- Activate disable ammo bar
 GoldenHUDV1.HeaderAmmo = Color(0, 0, 0, 225) -- Change the color the header
 GoldenHUDV1.BackgroundAmmo = Color(0, 0, 0, 225) -- Change the color of the background
 GoldenHUDV1.AmmoBar = Color(255, 255, 255, 255)	-- Change the color of the ammo bar
