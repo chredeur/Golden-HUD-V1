@@ -20,6 +20,7 @@ local HideElementsTable = {
 	["CHudSuitPower"] = true,
     ["CHudAmmo"] = true,
     ["CHudSecondaryAmmo"] = true,
+    ["CHudCrosshair"] = GoldenHUDV1.EnableCrosshair
 }
 
 local healthicon = Material( "golden_hud/health.png" )
@@ -40,6 +41,10 @@ hook.Add("HUDPaint","GoldenHudV1",function()
 	local ply = LocalPlayer()
 	local wep, total, clip, nicename, weaponicon, ammoicon
 
+-- Crosshair --
+	if GoldenHUDV1.EnableCrosshair == true then
+		draw.RoundedBox( 3, ScrW() / 2 - 3, ScrH() / 2 - 3, 7, 7, GoldenHUDV1.CrosshairColor)
+	end
 
 -- Heatlh Bar --
 	if GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == true then
@@ -192,7 +197,7 @@ hook.Add("HUDPaint","GoldenHudV1",function()
 		clip = wep:Clip1()
 		nicename = wep:GetPrintName()
 		if clip < 0 or table.HasValue( GoldenHUDV1.BlackListWeapon or "weapon_physcannon", wep:GetClass() ) then return end
-		if string.len(nicename) > 17 then nicename = string.Left( nicename, 13 ) .. "..." end
+		if string.len(nicename) > 15 then nicename = string.Left( nicename, 13 ) .. "..." end
 		if GoldenHUDV1.EnableNameWeapon then
 			draw.RoundedBox( 5, 328, ScrH() - 70, 150 - 2, 25, GoldenHUDV1.HeaderAmmo )
 		end
@@ -207,6 +212,7 @@ hook.Add("HUDPaint","GoldenHudV1",function()
 			draw.SimpleText( nicename, "GoldenHudV1Font", 400, ScrH() - 69, GoldenHUDV1.AmmoTextColor, TEXT_ALIGN_CENTER ) 
 		end
 	end
+
 end )
 
 local function HideElements( element )

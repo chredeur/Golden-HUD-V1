@@ -5,9 +5,13 @@
 #################################################*/
 GoldenHUDV1 = {}
 
+-- Crosshair
+GoldenHUDV1.EnableCrosshair = true -- Activate disable the Crosshair
+GoldenHUDV1.CrosshairColor = Color(255, 255, 255, 255) -- Change the color of the Crosshair
+
 -- Health Bar
-GoldenHUDV1.HealthColor = Color(255, 100, 62, 150) -- Change the color of the life bar
-GoldenHUDV1.HeatlhBar = true -- Activate disable the life bar
+GoldenHUDV1.HealthColor = Color(255, 100, 62, 150) -- Change the color of the life bar 
+GoldenHUDV1.HeatlhBar = true  -- Activate disable the life bar
 GoldenHUDV1.HealthNumber = true -- Activate disable the number of life
 GoldenHUDV1.HealthNumberColor = Color(255, 255, 255, 150) -- Change the color of the number of life
 GoldenHUDV1.HealthPicture = true -- Enable disable image
@@ -41,5 +45,6 @@ GoldenHUDV1.BlackListWeapon = { -- Blacklist the weapon
 	"sent_bong",
 	"sent_messure", 
 	"sent_sniffer", 	
-	"sent_tablet"
+	"sent_tablet",
+	"pass_police_nationale_1"
 }
