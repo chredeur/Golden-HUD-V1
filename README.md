@@ -2,10 +2,13 @@
 
 Features
 
-- NEW: Supports Hungermod
+
+- New supports Hungermod
 - New ammo counter
-- New config file
+- New configuration file
 - New percentage on the bar
+- New crosshair
+- New supports notification
 
 Installation
 
