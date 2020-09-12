@@ -5,6 +5,17 @@
 #################################################*/
 GoldenHUDV1 = {}
 
+-- Notification
+GoldenHUDV1.EnableNotif = true -- Activate disable the Notification
+
+-- Agenda
+GoldenHUDV1.EnableAgenda = true -- Activate disable the Agenda
+GoldenHUDV1.AgendaColor = Color(0, 0, 0, 225) -- Change the color of the Agenda
+GoldenHUDV1.AgendaColorTitle = Color(255, 255, 255, 255) -- Change the color of the Title
+GoldenHUDV1.AgendaColorText = Color(255, 255, 255, 255) -- Change the color of the Text
+GoldenHUDV1.AgendaPosX = 40 -- Change position x
+GoldenHUDV1.AgendaPosY = 75 -- Change position y
+
 -- Crosshair
 GoldenHUDV1.EnableCrosshair = true -- Activate disable the Crosshair
 GoldenHUDV1.CrosshairColor = Color(255, 255, 255, 255) -- Change the color of the Crosshair

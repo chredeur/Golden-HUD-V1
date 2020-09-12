@@ -1,9 +1,3 @@
-surface.CreateFont("GoldenHudV1Font", {
-	font = "Righteous",
-	size = 25, 
-	weight = 20
-})
-
 local ScreenPos = ScrH()/ 1.2
 local ForegroundColor = Color( 255, 255, 255 )
 local BackgroundColor = Color( 35, 35, 35 )
@@ -25,7 +19,7 @@ Icons[ NOTIFY_HINT ] = Material( "golden_hud/hint.png" )
 Icons[ NOTIFY_CLEANUP ] = Material( "golden_hud/cleanup.png" )
 
 local Notifications = {}
-
+if GoldenHUDV1.EnableNotif then
 local function DrawNotification( x, y, w, h, text, icon, col, progress )
 	draw.RoundedBoxEx( 5, x, y, h, h + 5, chredeurcolor, true, false, true, false )
 	draw.RoundedBoxEx( 5, x + h, y, w - h, h + 5, chredeurcolor, false, true, false, true )
@@ -112,4 +106,4 @@ hook.Add( "HUDPaint", "DrawNotifications", function()
 	end
 end )
 
-
+end

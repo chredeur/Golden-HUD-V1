@@ -18,7 +18,7 @@ resource.AddFile("materials/golden_hud/hint.png")
 AddCSLuaFile( "sh_config.lua" )
 AddCSLuaFile( "cl/cl_init.lua" )
 AddCSLuaFile( "cl/cl_notifications.lua" )
-
+AddCSLuaFile( "cl/cl_agenda.lua" )
 
 if SERVER then
 	resource.AddWorkshop("1810284433")
@@ -36,6 +36,7 @@ else
 
 	include( "sh_config.lua" )
 
+	include( "cl/cl_agenda.lua")
 	include( "cl/cl_init.lua" )
 	include( "cl/cl_notifications.lua" )
 

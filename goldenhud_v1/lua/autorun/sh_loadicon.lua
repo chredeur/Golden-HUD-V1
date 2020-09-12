@@ -5,13 +5,13 @@ AddCSLuaFile( 'goldenhud/sh_initialize.lua' )
 include( 'goldenhud/sh_initialize.lua' )
 Msg( "[goldenhudv1] sh_initialize.lua load !\n" )
 
-local GoldenVersion = "1.5"
+local GoldenVersion = "1.6"
 
 if SERVER then
 
 util.AddNetworkString( "goldenhudversion" )
 
-hook.Add( "PlayerInitialSpawn", "OuvertureCentralFpsSpawn", function(ply)
+hook.Add( "PlayerInitialSpawn", "GoldenHudV1Version", function(ply)
 timer.Simple(5, function()
 if !IsValid(ply) then return end
 net.Start("goldenhudversion") 

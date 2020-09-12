@@ -4,10 +4,8 @@
 
 #################################################*/
 
-include("goldenhud/sh_config.lua")
-
 local HideElementsTable = {
-	["DarkRP_HUD"] = true,
+	["DarkRP_HUD"] = false,
 	["DarkRP_ArrestedHUD"] = false,
 	["DarkRP_EntityDisplay"] = false,
 	["DarkRP_ZombieInfo"] = true,
