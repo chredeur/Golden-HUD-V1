@@ -9,6 +9,7 @@ Features
 - New percentage on the bar
 - New crosshair
 - New supports notification
+- New supports agenda
 
 Installation
 
