@@ -25,8 +25,7 @@ local function DrawNotification( x, y, w, h, text, icon, col, progress )
 	draw.RoundedBoxEx( 5, x + h, y, w - h, h + 5, chredeurcolor, false, true, false, true )
 
 	surface.SetDrawColor( Color( 255, 255, 255, 255 ) )
-	draw.SimpleText( text, "GoldenHudV1Font", x + 32 + 10, y + h / 2, ForegroundColor,
-		TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER )
+	draw.SimpleText( text, "GoldenHudV1Font", x + 32 + 10, y + h / 2, ForegroundColor, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER )
 
 	surface.SetDrawColor( ForegroundColor )
 	surface.SetMaterial( icon )

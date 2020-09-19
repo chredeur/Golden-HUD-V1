@@ -1,15 +1,3 @@
-surface.CreateFont("Title", {
-    font = "Righteous",
-    size = 25, 
-    weight = 20
-})
-
-surface.CreateFont("Text", {
-    font = "Righteous",
-    size = 20, 
-    weight = 20
-})
-
 local ply
 hook.Add("HUDPaint", "hudagenda", function()
     if GoldenHUDV1.EnableAgenda then
@@ -25,7 +13,7 @@ hook.Add("HUDPaint", "hudagenda", function()
 
         draw.RoundedBox(5, x, y, 426, 106, GoldenHUDV1.AgendaColor)
 
-        draw.DrawNonParsedText(agenda.Title, "Title", x + 10, y + 5, GoldenHUDV1.AgendaColorTitle, 0)
-        draw.DrawNonParsedText(agendaText, "Text", x + 10, y + 40, GoldenHUDV1.AgendaColorText, 0)
+        draw.DrawNonParsedText(agenda.Title, "GoldenHudV1Font", x + 10, y + 5, GoldenHUDV1.AgendaColorTitle, 0)
+        draw.DrawNonParsedText(agendaText, "GoldenHudV1AgendaText", x + 13, y + 40, GoldenHUDV1.AgendaColorText, 0)
     end
 end)

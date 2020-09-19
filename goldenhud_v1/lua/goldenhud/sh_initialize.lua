@@ -15,10 +15,16 @@ resource.AddFile("materials/golden_hud/generic.png")
 resource.AddFile("materials/golden_hud/undo.png")
 resource.AddFile("materials/golden_hud/hint.png")
 
+resource.AddFile("materials/golden_hud/head.png")
+
 AddCSLuaFile( "sh_config.lua" )
 AddCSLuaFile( "cl/cl_init.lua" )
 AddCSLuaFile( "cl/cl_notifications.lua" )
 AddCSLuaFile( "cl/cl_agenda.lua" )
+AddCSLuaFile( "cl/cl_lockdown.lua" )
+AddCSLuaFile( "cl/cl_font.lua" )
+AddCSLuaFile( "cl/cl_wanted.lua" )
+AddCSLuaFile( "cl/cl_headplayer.lua" )
 
 if SERVER then
 	resource.AddWorkshop("1810284433")
@@ -35,9 +41,12 @@ if SERVER then
 else
 
 	include( "sh_config.lua" )
-
 	include( "cl/cl_agenda.lua")
 	include( "cl/cl_init.lua" )
 	include( "cl/cl_notifications.lua" )
+	include( "cl/cl_lockdown.lua" )
+	include( "cl/cl_font.lua" )
+	include( "cl/cl_wanted.lua" )
+	include( "cl/cl_headplayer.lua" )
 
 end

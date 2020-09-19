@@ -5,8 +5,26 @@
 #################################################*/
 GoldenHUDV1 = {}
 
+-- Language
+GoldenHUDV1.ConfigLanguage = "en" -- en, fr 
+
+-- Head hud
+GoldenHUDV1.EnableHead = true -- Activate disable the Head hud
+
 -- Notification
 GoldenHUDV1.EnableNotif = true -- Activate disable the Notification
+
+-- Wanted
+GoldenHUDV1.EnableWanted = true
+GoldenHUDV1.WantedColorTitle = Color(0, 132, 255, 255) -- Change the color of the Title
+GoldenHUDV1.WantedColorText = Color(255, 255, 255, 150) -- Change the color of the Text
+GoldenHUDV1.WantedColor = Color(0, 0, 0, 225) -- Change the color of the Wanted
+
+-- Lockdown
+GoldenHUDV1.EnableLockdown = true -- Activate disable the Lockdown
+GoldenHUDV1.LockdownColor = Color(0, 0, 0, 225) -- Change the color of the Lockdown
+GoldenHUDV1.LockdownColorTitle = Color(255, 96, 96, 150) -- Change the color of the Title
+GoldenHUDV1.LockdownColorText = Color(255, 255, 255, 150) -- Change the color of the Text
 
 -- Agenda
 GoldenHUDV1.EnableAgenda = true -- Activate disable the Agenda
@@ -59,3 +77,17 @@ GoldenHUDV1.BlackListWeapon = { -- Blacklist the weapon
 	"sent_tablet",
 	"pass_police_nationale_1"
 }
+
+-- Language
+GoldenHUDV1.Language = {														
+	["fr"] = {																					
+		["wanted"] = "Rechercher",										
+		["wanted info"] = "Vous éte recherché par la police",			
+		["lockdown"] = "Couvre-feu",															
+	},																	
+	["en"] = {																							
+		["wanted"] = "Wanted",											
+		["wanted info"] = "You are wanted by police",				
+		["lockdown"] = 'Lockdown',																																
+	}																	
+}	

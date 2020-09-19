@@ -5,7 +5,7 @@
 #################################################*/
 
 local HideElementsTable = {
-	["DarkRP_HUD"] = false,
+	["DarkRP_HUD"] = true,
 	["DarkRP_ArrestedHUD"] = false,
 	["DarkRP_EntityDisplay"] = false,
 	["DarkRP_ZombieInfo"] = true,
@@ -24,12 +24,6 @@ local HideElementsTable = {
 local healthicon = Material( "golden_hud/health.png" )
 local foodicon = Material( "golden_hud/hunger.png" )
 local armoricon = Material( "golden_hud/armor.png" )
-
-surface.CreateFont("GoldenHudV1Font", {
-	font = "Righteous",
-	size = 25, 
-	weight = 20
-})
 
 hook.Add("HUDPaint","GoldenHudV1",function()
 
