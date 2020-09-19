@@ -51,4 +51,4 @@ To come up :
 • Other minor additions ...
 
 
-Sincerely, Furiozia Development Team.
+Sincerely, Furiozia Development Team. 
