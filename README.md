@@ -1,26 +1,54 @@
 # Golden-HUD-V1
 
-Features
+Here is the Golden HUD V1 a very simple hud.
 
+Characteristics
 
-- New supports Hungermod
-- New ammo counter
-- New configuration file
-- New percentage on the bar
-- New crosshair
-- New supports notification
-- New supports agenda
+• Supports HungerMod
+• Ammunition counter
+• Configuration file
+• Percentage on bars
+• Crosshair
+• Supports notifications
+• Supports agenda
+• New ! Wanted HUD + Lockdown
+• New ! Head HUD
+• New ! English and French language support
 
 Installation
 
-Add this item to the workshop collection that your server is linked to and restart your server (resource.AddWorkshop is not required) if not https://github.com/goldensdevs/Golden-HUD-V1 download the addon put it in your addon folder of your server and put the content in your workshop collection .
+• Install GoldenHUD on your computer using WinRAR
+• Extract it to a specified folder (desktop, documents, downloads ...)
+• Drag the "GoldenHUD" folder to your addons folder
 
-content : https://steamcommunity.com/sharedfiles/filedetails/?id=1813097750
+Important: Install the content available below in your collection !
 
-Make sure to check back regularly for patches & improvements.
+Content: https://steamcommunity.com/sharedfiles/filedetails/?id=1813097750
+GitHub: https://github.com/goldensdevs/Golden-HUD-V1
+Support Discord: https://discord.com/invite/YTxuVdF
+Personal Discord: chredeur#2100
+
+Make sure to regularly check for fixes and improvements.
+
+
+Frequently Asked Questions:
+
+- The addon looks a lot like Rust's HUD, why?
+
+Simply because our addon is inspired by some addons on the market and features of Rust's HUD.
+
+- Can I change the layout of the bars?
+
+No, but you can choose which ones to display.
+
+- Can I receive help directly from a platform?
+
 
 To come up :
 
-- Theme change
-- Configuration in games
-- ....
+• Change of theme
+• In-game configuration
+• Other minor additions ...
+
+
+Sincerely, Furiozia Development Team.
