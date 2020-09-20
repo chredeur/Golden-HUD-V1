@@ -14,6 +14,7 @@ Characteristics
 • New ! Wanted HUD + Lockdown
 • New ! Head HUD
 • New ! English and French language support
+• New ! HUD for doors
 
 Installation
 
