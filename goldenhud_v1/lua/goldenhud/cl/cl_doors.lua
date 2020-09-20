@@ -58,19 +58,21 @@ local function GetDrawPosAng(door)
 end
 
 hook.Add("PostDrawTranslucentRenderables", "DoorHUD", function()
-    local ShouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "DoorHUD")
+	if GoldenHUDV1.DoorHUD then
+    	local ShouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "DoorHUD")
 
-    if ShouldDraw == false or !DarkRP then return end
+    	if ShouldDraw == false or !DarkRP then return end
 
-    for k, v in pairs( ents.GetAll() ) do
-        if Door[v:GetClass()] and LocalPlayer():GetPos():DistToSqr(v:GetPos()) < 500000 then
+    	for k, v in pairs( ents.GetAll() ) do
+        	if Door[v:GetClass()] and LocalPlayer():GetPos():DistToSqr(v:GetPos()) < 500000 then
 
-            cam.Start3D2D(GetDrawPosAng(v))
-                v:drawDoorInfo()
-            cam.End3D2D()
+            	cam.Start3D2D(GetDrawPosAng(v))
+                	v:drawDoorInfo()
+            	cam.End3D2D()
 
-        end
-    end
+        	end
+    	end
+	end
 end)
 
 local Entity = FindMetaTable("Entity")
