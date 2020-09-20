@@ -5,7 +5,7 @@ AddCSLuaFile( 'goldenhud/sh_initialize.lua' )
 include( 'goldenhud/sh_initialize.lua' )
 Msg( "[goldenhudv1] sh_initialize.lua load !\n" )
 
-local GoldenVersion = "1.7"
+local GoldenVersion = "1.8"
 
 if SERVER then
 

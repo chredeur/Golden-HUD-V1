@@ -6,7 +6,7 @@ if GoldenHUDV1.EnableHead then
     	if not IsValid(targ) then return end
     	local Cteam = team.GetColor(targ:Team())
 		local pos = targ:EyePos()	
-		if LocalPlayer():GetPos():Distance( targ:GetPos() ) < 100 then
+		if LocalPlayer():GetPos():Distance( targ:GetPos() ) < 120 then
     		pos.z = pos.z + 1
     		pos = pos:ToScreen()	
     		if not targ:getDarkRPVar("wanted") then      

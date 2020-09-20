@@ -4,6 +4,18 @@ surface.CreateFont("GoldenHudV1AgendaText", {
     weight = 20
 })
 
+surface.CreateFont("GoldenHudV1Doorstitle", {
+    font = "Righteous",
+    size = 100, 
+    weight = 20
+})
+
+surface.CreateFont("GoldenHudV1Doors", {
+    font = "Righteous",
+    size = 75, 
+    weight = 20
+})
+
 surface.CreateFont("GoldenHudV1Font", {
 	font = "Righteous",
 	size = 25, 

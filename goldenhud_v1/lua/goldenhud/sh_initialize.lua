@@ -25,6 +25,7 @@ AddCSLuaFile( "cl/cl_lockdown.lua" )
 AddCSLuaFile( "cl/cl_font.lua" )
 AddCSLuaFile( "cl/cl_wanted.lua" )
 AddCSLuaFile( "cl/cl_headplayer.lua" )
+AddCSLuaFile( "cl/cl_doors.lua" )
 
 if SERVER then
 	resource.AddWorkshop("1810284433")
@@ -48,5 +49,6 @@ else
 	include( "cl/cl_font.lua" )
 	include( "cl/cl_wanted.lua" )
 	include( "cl/cl_headplayer.lua" )
+	include( "cl/cl_doors.lua" )
 
 end

@@ -8,6 +8,9 @@ GoldenHUDV1 = {}
 -- Language
 GoldenHUDV1.ConfigLanguage = "en" -- en, fr 
 
+-- Door Hud
+GoldenHUDV1.DoorHUD = true -- Activate disable the Door Hud
+
 -- Head hud
 GoldenHUDV1.EnableHead = true -- Activate disable the Head hud
 
@@ -83,11 +86,15 @@ GoldenHUDV1.Language = {
 	["fr"] = {																					
 		["wanted"] = "Rechercher",										
 		["wanted info"] = "Vous éte recherché par la police",			
-		["lockdown"] = "Couvre-feu",															
+		["lockdown"] = "Couvre-feu",
+		["Unowned"] = "A vendre (F2)",
+		["keys_owned_by"] = "Porte Vendu\nOwner: ",														
 	},																	
 	["en"] = {																							
 		["wanted"] = "Wanted",											
 		["wanted info"] = "You are wanted by police",				
-		["lockdown"] = 'Lockdown',																																
+		["lockdown"] = "Lockdown",
+		["Unowned"] = "For Sale (F2)",
+		["keys_owned_by"] = "Sold Door\nOwner: ",																														
 	}																	
 }	
