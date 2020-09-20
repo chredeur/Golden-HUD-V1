@@ -43,6 +43,8 @@ No, but you can choose which ones to display.
 
 - Can I receive help directly from a platform?
 
+Yes ! Via Discord.
+
 
 To come up :
 
