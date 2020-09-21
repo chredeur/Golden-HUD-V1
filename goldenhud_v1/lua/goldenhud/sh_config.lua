@@ -6,7 +6,7 @@
 GoldenHUDV1 = {}
 
 -- Language
-GoldenHUDV1.ConfigLanguage = "en" -- en, fr 
+GoldenHUDV1.ConfigLanguage = "fr" -- en, fr 
 
 -- Door Hud
 GoldenHUDV1.DoorHUD = true -- Activate disable the Door Hud

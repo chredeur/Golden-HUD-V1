@@ -25,11 +25,14 @@ local healthicon = Material( "golden_hud/health.png" )
 local foodicon = Material( "golden_hud/hunger.png" )
 local armoricon = Material( "golden_hud/armor.png" )
 
+local health = 0
+local armor = 0
+local food = 0
 hook.Add("HUDPaint","GoldenHudV1",function()
 
-	local health = LocalPlayer():Health()
-	local armor = LocalPlayer():Armor()
-	local food = math.Round(LocalPlayer():getDarkRPVar("Energy") or 0)
+	health = Lerp( FrameTime(), health, LocalPlayer():Health())
+	armor = Lerp( FrameTime(), armor, LocalPlayer():Armor())
+	food = Lerp( FrameTime(), food, LocalPlayer():getDarkRPVar("Energy") or 0)
 	local ply = LocalPlayer()
 	local wep, total, clip, nicename, weaponicon, ammoicon
 
@@ -97,45 +100,45 @@ hook.Add("HUDPaint","GoldenHudV1",function()
 
 -- Text Health --
 	if GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthNumber == true and GoldenHUDV1.HealthPicture == true then 
-		draw.SimpleText(health, "GoldenHudV1Font", 179, ScrH() - 119.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 179, ScrH() - 119.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == false and GoldenHUDV1.ArmorBar == false and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthNumber == true and GoldenHUDV1.HealthPicture == true then 
 		draw.SimpleText("Pourquoi veut tu un hud bg ;D", "GoldenHudV1Font", 175, ScrH() - 119.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == false and GoldenHUDV1.HealthNumber == true then  
-		draw.SimpleText(health, "GoldenHudV1Font", 163, ScrH() - 119.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 163, ScrH() - 119.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 
 	elseif GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == false and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == false and GoldenHUDV1.HealthNumber == true then  
-		draw.SimpleText(health, "GoldenHudV1Font", 163, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 163, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == false and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == true and GoldenHUDV1.HealthNumber == true then  
-		draw.SimpleText(health, "GoldenHudV1Font", 179, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 179, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 
 	elseif GoldenHUDV1.FoodBar == false and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == false and GoldenHUDV1.HealthNumber == true then  
-		draw.SimpleText(health, "GoldenHudV1Font", 163, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 163, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == false and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.HeatlhBar == true and GoldenHUDV1.HealthPicture == true and GoldenHUDV1.HealthNumber == true then  
-		draw.SimpleText(health, "GoldenHudV1Font", 179, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(health), "GoldenHudV1Font", 179, ScrH() - 100.5, GoldenHUDV1.HealthNumberColor, TEXT_ALIGN_CENTER)
 	end
 
 -- Text Armor --
 	if GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.ArmorNumber == true and GoldenHUDV1.ArmorPicture == true then 
-		draw.SimpleText(armor, "GoldenHudV1Font", 179, ScrH() - 83, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(armor), "GoldenHudV1Font", 179, ScrH() - 83, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == true and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.ArmorPicture == false and GoldenHUDV1.ArmorNumber == true then 
-		draw.SimpleText(armor, "GoldenHudV1Font", 163, ScrH() - 83, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(armor), "GoldenHudV1Font", 163, ScrH() - 83, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
 
 	elseif GoldenHUDV1.FoodBar == false and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.ArmorNumber == true and GoldenHUDV1.ArmorPicture == true then 
-		draw.SimpleText(armor, "GoldenHudV1Font", 179, ScrH() - 63, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(armor), "GoldenHudV1Font", 179, ScrH() - 63, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.FoodBar == false and GoldenHUDV1.ArmorBar == true and GoldenHUDV1.ArmorPicture == false and GoldenHUDV1.ArmorNumber == true then 
-		draw.SimpleText(armor, "GoldenHudV1Font", 163, ScrH() - 63, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(armor), "GoldenHudV1Font", 163, ScrH() - 63, GoldenHUDV1.ArmorNumberColor, TEXT_ALIGN_CENTER)
 	end
 
 -- Text Food --
 	if GoldenHUDV1.ArmorBar == true and GoldenHUDV1.FoodBar == true and GoldenHUDV1.FoodNumber == true and GoldenHUDV1.FoodPicture == true then 
-		draw.SimpleText(food, "GoldenHudV1Font", 179, ScrH() - 46.3, GoldenHUDV1.FoodNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(food), "GoldenHudV1Font", 179, ScrH() - 46.3, GoldenHUDV1.FoodNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.ArmorBar == true and GoldenHUDV1.FoodBar == true and GoldenHUDV1.FoodPicture == false and GoldenHUDV1.FoodNumber == true then 
-		draw.SimpleText(food, "GoldenHudV1Font", 163, ScrH() - 46.3, Color(255, 255, 255, 150), TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(food), "GoldenHudV1Font", 163, ScrH() - 46.3, Color(255, 255, 255, 150), TEXT_ALIGN_CENTER)
 
 	elseif GoldenHUDV1.ArmorBar == false and GoldenHUDV1.FoodBar == true and GoldenHUDV1.FoodNumber == true and GoldenHUDV1.FoodPicture == true then 
-		draw.SimpleText(food, "GoldenHudV1Font", 179, ScrH() - 63, GoldenHUDV1.FoodNumberColor, TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(food), "GoldenHudV1Font", 179, ScrH() - 63, GoldenHUDV1.FoodNumberColor, TEXT_ALIGN_CENTER)
 	elseif GoldenHUDV1.ArmorBar == false and GoldenHUDV1.FoodBar == true and GoldenHUDV1.FoodPicture == false and GoldenHUDV1.FoodNumber == true then 
-		draw.SimpleText(food, "GoldenHudV1Font", 163, ScrH() - 63, Color(255, 255, 255, 150), TEXT_ALIGN_CENTER)
+		draw.SimpleText(math.Round(food), "GoldenHudV1Font", 163, ScrH() - 63, Color(255, 255, 255, 150), TEXT_ALIGN_CENTER)
 	end
 
 
