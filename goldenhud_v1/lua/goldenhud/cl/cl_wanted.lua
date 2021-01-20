@@ -1,4 +1,4 @@
-hook.Add("HUDPaint", "wanted", function()
+hook.Add("HUDPaint", "GoldenHudV1.wanted", function()
 	local wanted = LocalPlayer():getDarkRPVar( "wanted" )
 	if wanted and GoldenHUDV1.EnableWanted and GetGlobalBool("DarkRP_LockDown") then
         local y = 160

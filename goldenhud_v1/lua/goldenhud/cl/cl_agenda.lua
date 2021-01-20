@@ -1,5 +1,5 @@
 local ply
-hook.Add("HUDPaint", "hudagenda", function()
+hook.Add("HUDPaint", "GoldenHudV1.hudagenda", function()
     if GoldenHUDV1.EnableAgenda then
         local shouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "GoldenHudV1Agenda")
         if shouldDraw == false or !DarkRP then return end

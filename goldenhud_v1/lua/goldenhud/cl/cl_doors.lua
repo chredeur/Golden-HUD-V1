@@ -57,7 +57,7 @@ local function GetDrawPosAng(door)
     return pos, ang, scale
 end
 
-hook.Add("PostDrawTranslucentRenderables", "DoorHUD", function()
+hook.Add("PostDrawTranslucentRenderables", "GoldenHudV1.DoorHUD", function()
 	if GoldenHUDV1.DoorHUD then
     	local ShouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "DoorHUD")
 
@@ -142,7 +142,7 @@ function Entity:drawDoorInfo()
     end
 end
 
-hook.Add("HUDDrawDoorData", "RemoveDoorHUD", function(ent)
+hook.Add("HUDDrawDoorData", "GoldenHudV1.RemoveDoorHUD", function(ent)
 
     local ShouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "DoorStateHUD")
 

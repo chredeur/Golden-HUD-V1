@@ -1,4 +1,4 @@
-hook.Add("HUDPaint", "lockdown", function()
+hook.Add("HUDPaint", "GoldenHudV1.lockdown", function()
 	if GoldenHUDV1.EnableLockdown then
     	if GetGlobalBool("DarkRP_LockDown") then
         	local shouldDraw = hook.Call("HUDShouldDraw", GAMEMODE, "DarkRP_LockdownHUD")
