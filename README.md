@@ -21,11 +21,11 @@ Here is the Golden HUD V1 a very simple hud.
 | English and French language support|
 | HUD for doors|
 
-Installation
-
-• Install GoldenHUD on your computer using WinRAR
-• Extract it to a specified folder (desktop, documents, downloads ...)
-• Drag the "GoldenHUD" folder to your addons folder
+|Installation|
+|-----------|
+|Install GoldenHUD on your computer using WinRAR|
+| Extract it to a specified folder (desktop, documents, downloads ...)|
+| Drag the "GoldenHUD" folder to your addons folder|
 
 Important: Install the content available below in your collection !
 
