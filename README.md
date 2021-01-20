@@ -4,17 +4,22 @@ Here is the Golden HUD V1 a very simple hud.
 
 Characteristics
 
-• Supports HungerMod
-• Ammunition counter
-• Configuration file
-• Percentage on bars
-• Crosshair
-• Supports notifications
-• Supports agenda
-• New ! Wanted HUD + Lockdown
-• New ! Head HUD
-• New ! English and French language support
-• New ! HUD for doors
+| **New !** Compatibility for Advanced Cooking Mod|
+| **New !** Compatibility for VCMod|
+| **New !** Added a speedometer (KM/H & MPH)|
+| **New !** Added an HUD for your Props|
+| **New !** Added FastDL and Workshop DL in the config' file|
+| Supports HungerMod|
+| Ammunition counter|
+| Configuration file|
+| Percentage on bars|
+| Crosshair|
+| Supports notifications|
+| Supports agenda|
+| Wanted HUD + Lockdown|
+| Head HUD|
+| English and French language support|
+| HUD for doors|
 
 Installation
 
