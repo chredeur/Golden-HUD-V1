@@ -2,8 +2,8 @@
 
 Here is the Golden HUD V1 a very simple hud.
 
-Characteristics
-
+|Characteristics|
+|---------------|
 | **New !** Compatibility for Advanced Cooking Mod|
 | **New !** Compatibility for VCMod|
 | **New !** Added a speedometer (KM/H & MPH)|
