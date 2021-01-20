@@ -29,10 +29,12 @@ Here is the Golden HUD V1 a very simple hud.
 
 Important: Install the content available below in your collection !
 
-Content: https://steamcommunity.com/sharedfiles/filedetails/?id=1813097750
-GitHub: https://github.com/goldensdevs/Golden-HUD-V1
-Support Discord: https://discord.com/invite/YTxuVdF
-Personal Discord: chredeur#2100
+|Links|
+|-----------|
+|Content: https://steamcommunity.com/sharedfiles/filedetails/?id=181309775|
+|GitHub: https://github.com/goldensdevs/Golden-HUD-V1|
+|Support Discord: https://discord.com/invite/YTxuVdF|
+|Personal Discord: chredeur#2100|
 
 Make sure to regularly check for fixes and improvements.
 
@@ -52,11 +54,4 @@ No, but you can choose which ones to display.
 Yes ! Via Discord.
 
 
-To come up :
-
-• Change of theme
-• In-game configuration
-• Other minor additions ...
-
-
-Sincerely, Furiozia Development Team. 
+Sincerely, chredeur and his team.
