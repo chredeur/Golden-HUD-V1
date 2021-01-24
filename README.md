@@ -4,11 +4,13 @@ Here is the Golden HUD V1 a very simple hud.
 
 |Characteristics|
 |---------------|
-| **New !** Compatibility for Advanced Cooking Mod|
-| **New !** Compatibility for VCMod|
-| **New !** Added a speedometer (KM/H & MPH)|
-| **New !** Added an HUD for your Props|
-| **New !** Added FastDL and Workshop DL in the config' file|
+| **New !** Compatibility for Advanced Medic Mod|
+| **New !** Voice Icon|
+| Compatibility for Advanced Cooking Mod|
+| Compatibility for VCMod|
+| Added a speedometer (KM/H & MPH)|
+| Added an HUD for your Props|
+| Added FastDL and Workshop DL in the config' file|
 | Supports HungerMod|
 | Ammunition counter|
 | Configuration file|
