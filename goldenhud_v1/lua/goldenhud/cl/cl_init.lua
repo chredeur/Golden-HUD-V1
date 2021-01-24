@@ -18,10 +18,14 @@ local HideElementsTable = {
 	["CHudSuitPower"] = true,
     ["CHudAmmo"] = true,
     ["CHudSecondaryAmmo"] = true,
+
     ["CHudCrosshair"] = GoldenHUDV1.EnableCrosshair,
 
     ["Cookingmod_Hunger"] = GoldenHUDV1.EnableCompatibilityACM,
 	["Cookingmod_Thirst"] = GoldenHUDV1.EnableCompatibilityACM,
+
+	["MedicMod_HUD"] = GoldenHUDV1.EnableAMMHealthStatus,
+	["MedicMod_DeathPanel"] = GoldenHUDV1.EnableAMMDeathPanel,
 
 	["VCMod_Health"] = GoldenHUDV1.EnableCompatibilityVCMod,
 	["VCMod_Damage"] = GoldenHUDV1.EnableCompatibilityVCMod,
@@ -255,6 +259,7 @@ hook.Add("HUDPaint","GoldenHudV1.Ammo",function()
 	if GoldenHUDV1.EnableCrosshair == true then
 		ply = LocalPlayer()
 		if ply:InVehicle() then return end
+		if not ply:Alive() then return end
 		draw.RoundedBox( 3, ScrW() / 2 - 3, ScrH() / 2 - 3, 7, 7, GoldenHUDV1.CrosshairColor)
 	end
 

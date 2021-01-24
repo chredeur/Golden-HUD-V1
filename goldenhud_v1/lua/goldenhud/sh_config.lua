@@ -24,6 +24,12 @@ GoldenHUDV1.SpeedometerBackgroundColor = Color(0, 0, 0, 225) -- Change the color
 GoldenHUDV1.EnableCompatibilityVCMod = false -- Activate disable the Compatibility VCMod
 GoldenHUDV1.CVCModBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
 
+-- Voice Icon --
+GoldenHUDV1.VoiceHUD = true -- Activate disable the Voice Hud
+GoldenHUDV1.VoiceHUDTheme = 2 -- Change theme of the Voice Hud 1 -> https://imgur.com/OrV1ST5 2 -> https://imgur.com/qB9EOxx
+GoldenHUDV1.VoiceHUDScale = 1 -- Change the size of the Voice Hud
+GoldenHUDV1.VoiceHUDColor = Color(255, 255, 255, 255) -- Change the color of the Voice Hud
+
 -- Props Hud --
 GoldenHUDV1.PropsHUD = true -- Activate disable the Props Hud
 GoldenHUDV1.PropsBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
@@ -35,6 +41,11 @@ GoldenHUDV1.CCAMCNumber = true -- Activate disable the number of the CAMC
 GoldenHUDV1.CAMCPicture = true -- Enable disable image of the CAMC
 GoldenHUDV1.CAMCColor = Color(74, 179, 242, 150) -- Change the color of the CAMC bar 
 GoldenHUDV1.CAMCNumberColor = Color(255, 255, 255, 255) -- Change the color of the number
+
+-- Compatibility Advanced Medic Mod --
+GoldenHUDV1.EnableCompatibilityAMM = false -- Activate disable the Compatibility Advanced Medic Mod
+GoldenHUDV1.EnableAMMDeathPanel = true -- Activate disable the Death Panel
+GoldenHUDV1.EnableAMMHealthStatus = true -- Activate disable the Health Status
 
 -- Door Hud --
 GoldenHUDV1.DoorHUD = true -- Activate disable the Door Hud
@@ -120,6 +131,12 @@ GoldenHUDV1.Language = {
 		["props"] = "Objets:",
 		["version_1"] = "[Alerte SuperAdmin GoldenHudV1] Version obsolète de GoldenHudV1, Version: ",
 		["version_2"] = " , téléchargez la dernière version sur Github, Workshop ou mtxserv resources, Version: ",
+		["health_status"] = "État De Santé",
+		["fracture"] = "Fracture",
+		["morphine"] = "Morphine",
+		["heartattack"] = "Crise Cardiaque",
+		["Poisoned"] = "Empoisonné",
+		["Bleeding"] = "Hémorragie",
 	},
 	["en"] = {
 		["wanted"] = "Wanted",
@@ -130,8 +147,14 @@ GoldenHUDV1.Language = {
 		["props"] = "Props:",
 		["version_1"] = "[GoldenHudV1 SuperAdmin Alert] Obsolete version of Golden Hud V1, Version : ",
 		["version_2"] = " , download the latest version on Github, Workshop or mtxserv resources, Version: ",
+		["health_status"] = "Health Status",
+		["fracture"] = "Fracture",
+		["morphine"] = "Morphine",
+		["heartattack"] = "Heart Attack",
+		["Poisoned"] = "Poisoned",
+		["Bleeding"] = "Bleeding",
 	}
 }
 
 -- Version --
-GoldenHUDV1.GoldenV1Version = "2.0" -- NEVER TOUCH THIS!
+GoldenHUDV1.GoldenV1Version = "2.1" -- NEVER TOUCH THIS!

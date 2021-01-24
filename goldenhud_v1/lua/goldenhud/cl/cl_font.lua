@@ -22,6 +22,12 @@ surface.CreateFont("GoldenHudV1Font", {
 	weight = 20
 })
 
+surface.CreateFont("GoldenHudV1Fontdeathpanel", {
+	font = "Righteous",
+	size = 22, 
+	weight = 20
+})
+
 surface.CreateFont("GoldenHudV1Fonthead1", {
 	font = "Righteous",
 	size = 35, 

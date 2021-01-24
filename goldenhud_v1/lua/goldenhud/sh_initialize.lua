@@ -26,6 +26,8 @@ if SERVER then
 	AddCSLuaFile( "cl/cl_doors.lua" )
 	AddCSLuaFile( "cl/cl_props.lua" )
 	AddCSLuaFile( "cl/cl_vehicle.lua" )
+	AddCSLuaFile( "cl/cl_medicmod.lua" )
+	AddCSLuaFile( "cl/cl_voiceicon.lua" )
 
 	if GoldenHUDV1.FastDL then
 		resource.AddFile("materials/golden_hud/health.png")
@@ -42,6 +44,14 @@ if SERVER then
 		resource.AddFile("materials/golden_hud/speedometer.png")
 		resource.AddFile("materials/golden_hud/fuel.png")
 		resource.AddFile("materials/golden_hud/engine.png")
+		resource.AddFile("materials/golden_hud/blood-drop.png")
+		resource.AddFile("materials/golden_hud/broken-bone.png")
+		resource.AddFile("materials/golden_hud/pulse.png")
+		resource.AddFile("materials/golden_hud/poison.png")
+		resource.AddFile("materials/golden_hud/syringe.png")
+		resource.AddFile("materials/golden_hud/speaker.png")
+		resource.AddFile("materials/golden_hud/microphone.png")
+
 	end
 
 	Msg( "\n" )
@@ -69,5 +79,7 @@ elseif CLIENT then
 	include( "cl/cl_doors.lua" )
 	include( "cl/cl_props.lua" )
 	include( "cl/cl_vehicle.lua" )
+	include( "cl/cl_medicmod.lua" )
+	include( "cl/cl_voiceicon.lua" )
 
 end
