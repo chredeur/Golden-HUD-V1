@@ -7,12 +7,11 @@ local syringeicon = Material( "golden_hud/syringe.png" )
 local yi = ScrW() - 100
 local xi = ScrH() - 239
 hook.Add("HUDPaint", "GoldenHudV1.MedicMod", function() 
-	if GoldenHUDV1.EnableCompatibilityAMM == false then return end
-
 	local ply = LocalPlayer()
+    if GoldenHUDV1.EnableCompatibilityAMM == false then return end
     if GoldenHUDV1.EnableAMMHealthStatus then 
         local nbStat = 1
-    	if ply:IsBleeding() or ply:IsPoisoned() or ply:GetHeartAttack() or ply:IsMorphine() or ply:IsFractured() and not ply:InVehicle() then
+    	if ply:IsBleeding() and not ply:InVehicle() or ply:IsPoisoned() and not ply:InVehicle() or ply:GetHeartAttack() and not ply:InVehicle() or ply:IsMorphine() and not ply:InVehicle() or ply:IsFractured() and not ply:InVehicle() then
     		draw.RoundedBox(5, yi - 73, xi + 106, 146, 127, Color(0, 0, 0, 225))
             draw.SimpleText(GoldenHUDV1.Language[ GoldenHUDV1.ConfigLanguage ][ "health_status" ], "GoldenHudV1Fontdeathpanel", yi - 1, xi + 119,Color( 255, 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     	end

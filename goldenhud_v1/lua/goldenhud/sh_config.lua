@@ -44,8 +44,8 @@ GoldenHUDV1.CAMCNumberColor = Color(255, 255, 255, 255) -- Change the color of t
 
 -- Compatibility Advanced Medic Mod --
 GoldenHUDV1.EnableCompatibilityAMM = false -- Activate disable the Compatibility Advanced Medic Mod
-GoldenHUDV1.EnableAMMDeathPanel = true -- Activate disable the Death Panel
-GoldenHUDV1.EnableAMMHealthStatus = true -- Activate disable the Health Status
+GoldenHUDV1.EnableAMMDeathPanel = false -- Activate disable the Death Panel
+GoldenHUDV1.EnableAMMHealthStatus = false -- Activate disable the Health Status
 
 -- Door Hud --
 GoldenHUDV1.DoorHUD = true -- Activate disable the Door Hud
@@ -55,6 +55,13 @@ GoldenHUDV1.EnableHead = true -- Activate disable the Head hud
 
 -- Notification --
 GoldenHUDV1.EnableNotif = true -- Activate disable the Notification
+
+-- Money Bar --
+GoldenHUDV1.MoneyColor = Color(1, 142, 8, 150) -- Change the color of the life bar 
+GoldenHUDV1.MoneyBar = true  -- Activate disable the life bar
+GoldenHUDV1.MoneyNumber = true -- Activate disable the number of life
+GoldenHUDV1.MoneyNumberColor = Color(255, 255, 255, 150) -- Change the color of the number of life
+GoldenHUDV1.MoneyPicture = true -- Enable disable image
 
 -- Wanted --
 GoldenHUDV1.EnableWanted = true
@@ -157,4 +164,4 @@ GoldenHUDV1.Language = {
 }
 
 -- Version --
-GoldenHUDV1.GoldenV1Version = "2.1" -- NEVER TOUCH THIS!
+GoldenHUDV1.GoldenV1Version = "2.2" -- NEVER TOUCH THIS!
