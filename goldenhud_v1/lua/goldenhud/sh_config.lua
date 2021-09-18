@@ -40,7 +40,7 @@ GoldenHUDV1.PropsBackgroundColor = Color(0, 0, 0, 225) -- Change the color of th
 GoldenHUDV1.PropsTextColor = Color(255, 255, 255, 255) -- Change the color of the text
 
 -- Compatibility Advanced Cooking Mod --
-GoldenHUDV1.EnableCompatibilityACM = true -- Activate disable the Compatibility Advanced Cooking Mod
+GoldenHUDV1.EnableCompatibilityACM = false -- Activate disable the Compatibility Advanced Cooking Mod
 GoldenHUDV1.CCAMCNumber = true -- Activate disable the number of the CAMC
 GoldenHUDV1.CAMCPicture = true -- Enable disable image of the CAMC
 GoldenHUDV1.CAMCColor = Color(74, 179, 242, 150) -- Change the color of the CAMC bar 
