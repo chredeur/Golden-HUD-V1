@@ -24,6 +24,10 @@ GoldenHUDV1.SpeedometerBackgroundColor = Color(0, 0, 0, 225) -- Change the color
 GoldenHUDV1.EnableCompatibilityVCMod = false -- Activate disable the Compatibility VCMod
 GoldenHUDV1.CVCModBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
 
+-- Compatibility SVMod --
+GoldenHUDV1.EnableCompatibilitySVMod = false -- Activate disable the Compatibility SVMod
+GoldenHUDV1.CSVModBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
+
 -- Voice Icon --
 GoldenHUDV1.VoiceHUD = true -- Activate disable the Voice Hud
 GoldenHUDV1.VoiceHUDTheme = 2 -- Change theme of the Voice Hud 1 -> https://imgur.com/OrV1ST5 2 -> https://imgur.com/qB9EOxx
@@ -36,7 +40,7 @@ GoldenHUDV1.PropsBackgroundColor = Color(0, 0, 0, 225) -- Change the color of th
 GoldenHUDV1.PropsTextColor = Color(255, 255, 255, 255) -- Change the color of the text
 
 -- Compatibility Advanced Cooking Mod --
-GoldenHUDV1.EnableCompatibilityACM = false -- Activate disable the Compatibility Advanced Cooking Mod
+GoldenHUDV1.EnableCompatibilityACM = true -- Activate disable the Compatibility Advanced Cooking Mod
 GoldenHUDV1.CCAMCNumber = true -- Activate disable the number of the CAMC
 GoldenHUDV1.CAMCPicture = true -- Enable disable image of the CAMC
 GoldenHUDV1.CAMCColor = Color(74, 179, 242, 150) -- Change the color of the CAMC bar 
@@ -164,4 +168,4 @@ GoldenHUDV1.Language = {
 }
 
 -- Version --
-GoldenHUDV1.GoldenV1Version = "2.2" -- NEVER TOUCH THIS!
+GoldenHUDV1.GoldenV1Version = "2.3" -- NEVER TOUCH THIS!

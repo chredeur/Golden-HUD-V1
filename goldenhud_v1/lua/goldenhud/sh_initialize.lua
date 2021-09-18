@@ -51,7 +51,8 @@ if SERVER then
 		resource.AddFile("materials/golden_hud/syringe.png")
 		resource.AddFile("materials/golden_hud/speaker.png")
 		resource.AddFile("materials/golden_hud/microphone.png")
-		resource.AddFile("materials/golden_hud/money-bag.png.png")
+		resource.AddFile("materials/golden_hud/money-bag.png")
+		resource.AddFile("materials/golden_hud/loading.png")
 
 	end
 

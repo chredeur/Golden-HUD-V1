@@ -360,3 +360,18 @@ hook.Add( "HUDShouldDraw", "HideElements", HideElements )
 hook.Add( "HUDDrawTargetID", "ByeTargetIdHUD", function()
     return false
 end )
+
+if GoldenHUDV1.EnableCompatibilitySVMod then
+	local function SV_HUDPaint()
+		local Vehicle = LocalPlayer():GetVehicle()
+		if not SVMOD:IsVehicle(Vehicle) then return end
+
+	end
+	hook.Add("SV_PlayerEnteredVehicle", "SV_EnableHUD", function(ply, veh)
+		hook.Add("HUDPaint", "SV_HUDPaint", SV_HUDPaint)
+	end)
+
+	hook.Add("SV_PlayerLeaveVehicle", "SV_DisableHUD", function()
+		hook.Remove("HUDPaint", "SV_HUDPaint")
+	end)
+end

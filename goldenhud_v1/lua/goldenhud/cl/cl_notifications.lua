@@ -2,8 +2,8 @@ local ScreenPos = ScrH()/ 1.2
 local ForegroundColor = Color( 255, 255, 255 )
 local BackgroundColor = Color( 35, 35, 35 )
 local chredeurcolor = Color(0, 0, 0, 225)
-local LoadingColor = Color( 22, 160, 133 )
-local LoadingIcon = Material( "notifications/loading.png" )
+local LoadingColor = Color( 255, 255, 255 )
+local LoadingIcon = Material( "golden_hud/loading.png" )
 
 local Colors = {}
 Colors[ NOTIFY_GENERIC ] = Color( 255, 255, 255 )
