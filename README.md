@@ -4,8 +4,10 @@ Here is the Golden HUD V1 a very simple hud.
 
 |Characteristics|
 |---------------|
-| **New !** Compatibility for Advanced Medic Mod|
-| **New !** Voice Icon|
+| **New !** Compatibility SVMod|
+| Money Hud|
+| Voice Icon|
+| Compatibility for Advanced Medic Mod|
 | Compatibility for Advanced Cooking Mod|
 | Compatibility for VCMod|
 | Added a speedometer (KM/H & MPH)|
