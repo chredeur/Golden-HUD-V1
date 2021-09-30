@@ -35,7 +35,7 @@ Important: Install the content available below in your collection !
 
 |Links|
 |-----------|
-|Content: https://steamcommunity.com/sharedfiles/filedetails/?id=181309775|
+|Content: https://steamcommunity.com/sharedfiles/filedetails/?id=2608715273|
 |GitHub: https://github.com/goldensdevs/Golden-HUD-V1|
 |Support Discord: https://discord.com/invite/HmshudTkJN|
 |Personal Discord: chredeur#1328|
