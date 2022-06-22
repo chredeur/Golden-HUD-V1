@@ -21,7 +21,7 @@ GoldenHUDV1.MPHCounter = true -- true = MPH system / false = KM/H system
 GoldenHUDV1.SpeedometerBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
 
 -- Vehicle System --
-GoldenHUDV1.VehicleEnable = true -- Activate disable the Vehicle System
+GoldenHUDV1.VehicleEnable = false -- Activate disable the Vehicle System
 GoldenHUDV1.Vehicle = "vcmod" -- "vcmod" or "svmod"
 GoldenHUDV1.VehicleBackgroundColor  = Color(0, 0, 0, 225) -- Change the color of the Background
 
@@ -53,6 +53,7 @@ GoldenHUDV1.DoorHUD = true -- Activate disable the Door Hud
 
 -- Head hud --
 GoldenHUDV1.EnableHead = true -- Activate disable the Head hud
+GoldenHUDV1.DistanceHead = 150 -- The minimum distance to see the hud
 
 -- Notification --
 GoldenHUDV1.EnableNotif = true -- Activate disable the Notification

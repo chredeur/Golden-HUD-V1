@@ -6,7 +6,7 @@ if GoldenHUDV1.EnableHead then
     	if not IsValid(targ) then return end
     	local Cteam = team.GetColor(targ:Team())
 		local pos = targ:EyePos()	
-		if LocalPlayer():GetPos():Distance( targ:GetPos() ) < 120 then
+		if LocalPlayer():GetPos():Distance( targ:GetPos() ) < GoldenHUDV1.DistanceHead then
     		pos.z = pos.z + 1
     		pos = pos:ToScreen()	
     		if not targ:getDarkRPVar("wanted") then      
@@ -20,13 +20,12 @@ if GoldenHUDV1.EnableHead then
         	local name, plyTeam = targ:Nick(), targ:Team()
         	draw.SimpleText(string.upper(name),"GoldenHudV1Fonthead1",pos.x + 70, pos.y - 100, Color(255, 255, 255, 250),TEXT_ALIGN_LEFT ,TEXT_ALIGN_CENTER)	
         	local Job = targ:getDarkRPVar("job") or team.GetName(targ:Team())
-            draw.SimpleText(Job,"GoldenHudV1AgendaText",pos.x + 70, pos.y - 75, Color(255, 255, 255, 250),TEXT_ALIGN_LEFT ,TEXT_ALIGN_CENTER)
-            end
- 		end
+            draw.SimpleText(Job,"GoldenHudV1AgendaText",pos.x + 70, pos.y - 75, Color(255, 255, 255, 250),TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+        end
  	end
 	FMT.drawWantedInfo = function(targ)
 		if not targ:Alive() then return end
-    	if(targ:GetPos():Distance(LocalPlayer():GetPos()) <= 150) then
+    	if(targ:GetPos():Distance(LocalPlayer():GetPos()) <= GoldenHUDV1.DistanceHead) then
 			local pos = targ:EyePos()
 			pos.z = pos.z + 1
 			pos = pos:ToScreen()	
@@ -37,3 +36,4 @@ if GoldenHUDV1.EnableHead then
 			end	 	
 		end  
 	end
+end

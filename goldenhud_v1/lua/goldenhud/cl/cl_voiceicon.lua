@@ -1,5 +1,5 @@
-local VoiceIcon1 = Material("golden_hud/speaker.png")
-local VoiceIcon2 = Material("golden_hud/microphone.png")
+local VoiceIcon1 = Material("golden_hud/microphone.png")
+local VoiceIcon2 = Material("golden_hud/speaker.png")
 local VoiceIsActived = false
 local Icon
 

@@ -335,7 +335,7 @@ hook.Add("HUDPaint","GoldenHudV1.Ammo",function()
 		clip = wep:Clip1()
 		nicename = wep:GetPrintName()
 		if clip < 0 or table.HasValue( GoldenHUDV1.BlackListWeapon or "weapon_physcannon", wep:GetClass() ) then return end
-		if string.len(nicename) > 15 then nicename = string.Left( nicename, 13 ) .. "..." end
+		if string.len(nicename) > 14 then nicename = string.Left( nicename, 12 ) .. "..." end
 		if GoldenHUDV1.EnableNameWeapon then
 			draw.RoundedBox( 5, 328, ScrH() - 70, 150 - 2, 25, GoldenHUDV1.HeaderAmmo )
 		end
@@ -350,6 +350,7 @@ hook.Add("HUDPaint","GoldenHudV1.Ammo",function()
 			draw.SimpleText( nicename, "GoldenHudV1Font", 400, ScrH() - 69, GoldenHUDV1.AmmoTextColor, TEXT_ALIGN_CENTER ) 
 		end
 	end
+	
 end )
 
 local function HideElements( element )

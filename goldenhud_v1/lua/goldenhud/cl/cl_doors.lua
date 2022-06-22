@@ -137,9 +137,9 @@ function Entity:drawDoorInfo()
     local h = table.Count(doorInfo) * 80
 
     if #doorInfo > 0 then
-        surface.DrawRect(-w/2,200 + 10,w,h)
         draw.DrawNonParsedText(text, "GoldenHudV1Doors", 0 , 200 + 10 , Color(255,255,255,255), TEXT_ALIGN_CENTER)
     end
+
 end
 
 hook.Add("HUDDrawDoorData", "GoldenHudV1.RemoveDoorHUD", function(ent)
