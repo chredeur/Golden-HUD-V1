@@ -4,6 +4,8 @@
 
 #################################################*/
 
+local vehiclehide = false if GoldenHUDV1.VehicleEnable == true && GoldenHUDV1.Vehicle == "vcmod" then vehiclehide = true end
+
 local HideElementsTable = {
 	["DarkRP_HUD"] = true,
 	["DarkRP_ArrestedHUD"] = false,
@@ -27,13 +29,13 @@ local HideElementsTable = {
 	["MedicMod_HUD"] = GoldenHUDV1.EnableAMMHealthStatus,
 	["MedicMod_DeathPanel"] = GoldenHUDV1.EnableAMMDeathPanel,
 
-	["VCMod_Health"] = GoldenHUDV1.EnableCompatibilityVCMod,
-	["VCMod_Damage"] = GoldenHUDV1.EnableCompatibilityVCMod,
-	["VCMod_ELS_Lights"] = GoldenHUDV1.EnableCompatibilityVCMod,
-	["VCMod_ELS_Siren"] = GoldenHUDV1.EnableCompatibilityVCMod, 
-	["VCMod_Fuel"] = GoldenHUDV1.EnableCompatibilityVCMod,
-	["VCMod_Name"] = GoldenHUDV1.EnableCompatibilityVCMod,
-	["VCMod_Icons"] = GoldenHUDV1.EnableCompatibilityVCMod,
+	["VCMod_Health"] = vehiclehide,
+	["VCMod_Damage"] = vehiclehide,
+	["VCMod_ELS_Lights"] = vehiclehide,
+	["VCMod_ELS_Siren"] = vehiclehide, 
+	["VCMod_Fuel"] = vehiclehide,
+	["VCMod_Name"] = vehiclehide,
+	["VCMod_Icons"] = vehiclehide,
 }
 
 local healthicon = Material( "golden_hud/health.png" )
@@ -360,18 +362,3 @@ hook.Add( "HUDShouldDraw", "HideElements", HideElements )
 hook.Add( "HUDDrawTargetID", "ByeTargetIdHUD", function()
     return false
 end )
-
-if GoldenHUDV1.EnableCompatibilitySVMod then
-	local function SV_HUDPaint()
-		local Vehicle = LocalPlayer():GetVehicle()
-		if not SVMOD:IsVehicle(Vehicle) then return end
-
-	end
-	hook.Add("SV_PlayerEnteredVehicle", "SV_EnableHUD", function(ply, veh)
-		hook.Add("HUDPaint", "SV_HUDPaint", SV_HUDPaint)
-	end)
-
-	hook.Add("SV_PlayerLeaveVehicle", "SV_DisableHUD", function()
-		hook.Remove("HUDPaint", "SV_HUDPaint")
-	end)
-end

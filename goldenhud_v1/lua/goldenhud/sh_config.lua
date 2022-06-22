@@ -20,13 +20,10 @@ GoldenHUDV1.SpeedometerHud = true -- Activate disable the Speedometer Hud
 GoldenHUDV1.MPHCounter = true -- true = MPH system / false = KM/H system
 GoldenHUDV1.SpeedometerBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
 
--- Compatibility VCMod --
-GoldenHUDV1.EnableCompatibilityVCMod = false -- Activate disable the Compatibility VCMod
-GoldenHUDV1.CVCModBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
-
--- Compatibility SVMod --
-GoldenHUDV1.EnableCompatibilitySVMod = false -- Activate disable the Compatibility SVMod
-GoldenHUDV1.CSVModBackgroundColor = Color(0, 0, 0, 225) -- Change the color of the Background
+-- Vehicle System --
+GoldenHUDV1.VehicleEnable = true -- Activate disable the Vehicle System
+GoldenHUDV1.Vehicle = "vcmod" -- "vcmod" or "svmod"
+GoldenHUDV1.VehicleBackgroundColor  = Color(0, 0, 0, 225) -- Change the color of the Background
 
 -- Voice Icon --
 GoldenHUDV1.VoiceHUD = true -- Activate disable the Voice Hud
@@ -166,6 +163,3 @@ GoldenHUDV1.Language = {
 		["Bleeding"] = "Bleeding",
 	}
 }
-
--- Version --
-GoldenHUDV1.GoldenV1Version = "2.3" -- NEVER TOUCH THIS!

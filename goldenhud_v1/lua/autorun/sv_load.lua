@@ -5,6 +5,9 @@ include( 'goldenhud/sh_initialize.lua' )
 Msg( "[goldenhudv1] sh_initialize.lua load !\n" )
 
 
+-- Version --
+local GoldenV1Version = "2.3" -- NEVER TOUCH THIS!
+
 if SERVER then
 	util.AddNetworkString( "goldenhudversion" )
 
@@ -16,8 +19,8 @@ if SERVER then
 			if !ply:IsSuperAdmin() then return end
 			http.Fetch( "https://raw.githubusercontent.com/goldensdevs/goldenhudv1-etc/master/goldenhudv1-version.txt", function( body, len, headers, code )
 				local GoldenReceive = string.gsub( body, "\n", "" )
-				if (GoldenReceive != "400: Invalid request") and (GoldenReceive != "404: Not Found") and (GoldenReceive != GoldenHUDV1.GoldenV1Version) then 
-					ply:ChatPrint( GoldenHUDV1.Language[ GoldenHUDV1.ConfigLanguage ][ "version_1" ] ..GoldenHUDV1.GoldenV1Version.. GoldenHUDV1.Language[ GoldenHUDV1.ConfigLanguage ][ "version_2" ] ..GoldenReceive )
+				if (GoldenReceive != "400: Invalid request") and (GoldenReceive != "404: Not Found") and (GoldenReceive != GoldenV1Version) then 
+					ply:ChatPrint( GoldenHUDV1.Language[ GoldenHUDV1.ConfigLanguage ][ "version_1" ] ..GoldenV1Version.. GoldenHUDV1.Language[ GoldenHUDV1.ConfigLanguage ][ "version_2" ] ..GoldenReceive )
 				end
 			end,
 			function( error )
