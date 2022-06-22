@@ -8,10 +8,7 @@ if GoldenHUDV1.EnableHead then
 		local pos = targ:EyePos()	
 		if LocalPlayer():GetPos():Distance( targ:GetPos() ) < GoldenHUDV1.DistanceHead then
     		pos.z = pos.z + 1
-    		pos = pos:ToScreen()	
-    		if not targ:getDarkRPVar("wanted") then      
-        		pos.y = pos.y - 1
-    		end  
+    		pos = pos:ToScreen()
 
             surface.SetMaterial(head)
             surface.SetDrawColor(Color(255, 255, 255, 250))
@@ -20,20 +17,19 @@ if GoldenHUDV1.EnableHead then
         	local name, plyTeam = targ:Nick(), targ:Team()
         	draw.SimpleText(string.upper(name),"GoldenHudV1Fonthead1",pos.x + 70, pos.y - 100, Color(255, 255, 255, 250),TEXT_ALIGN_LEFT ,TEXT_ALIGN_CENTER)	
         	local Job = targ:getDarkRPVar("job") or team.GetName(targ:Team())
-            draw.SimpleText(Job,"GoldenHudV1AgendaText",pos.x + 70, pos.y - 75, Color(255, 255, 255, 250),TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+        	local Jobdq = team.GetColor(targ:Team())
+            draw.SimpleText(Job,"GoldenHudV1AgendaText",pos.x + 70, pos.y - 75, Jobdq,TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
         end
  	end
+ 	
 	FMT.drawWantedInfo = function(targ)
 		if not targ:Alive() then return end
     	if(targ:GetPos():Distance(LocalPlayer():GetPos()) <= GoldenHUDV1.DistanceHead) then
 			local pos = targ:EyePos()
 			pos.z = pos.z + 1
 			pos = pos:ToScreen()	
-			if GAMEMODE.Config.showname then
-				local nick, plyTeam = targ:Nick(), targ:Team()
-				draw.DrawNonParsedText(nick, "GoldenHudV1Font", pos.x + 1, pos.y + 1, Color(255,255,255,0), 1)
-				draw.DrawNonParsedText(nick, "GoldenHudV1Font", pos.x, pos.y, Color(255,255,255,0), 1)
-			end	 	
+			local nick, plyTeam = targ:Nick(), targ:Team()
+			draw.SimpleText("Wanted","GoldenHudV1AgendaText",pos.x + 70, pos.y - 58, Color(255, 0, 0, 250),TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)	
 		end  
 	end
 end
